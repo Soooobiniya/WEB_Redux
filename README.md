@@ -48,8 +48,8 @@
 2. 그 action이 dispatch를 통해 reducer를 실행시킨다
 3. 그러면 reducer가 state에 새로운 값을 준다
 4. 그리고 state 값이 바뀌면 그 state가 subscribe하고 있는 함수들을 호출해 UI가 업데이트된다
-※ action에서 필수적인 property는 "type" !!!
-※ reducer에 if문 사용해서 action.type === ooo일 경우에 어떻게 동작해야 하는지 정의해서 return 하면 됨 !!!
-※ if 문에서 원본 상태를 그대로 사용해서 코드 쓰면 안되고, 꼭! 복제본(newState) 만들어서 사용해야 함 !!!
+* ※ action에서 필수적인 property는 "type" !!!
+* ※ reducer에 if문 사용해서 action.type === ooo일 경우에 어떻게 동작해야 하는지 정의해서 return 하면 됨 !!!
+* ※ if 문에서 원본 상태를 그대로 사용해서 코드 쓰면 안되고, 꼭! 복제본(newState) 만들어서 사용해야 함 !!!
 ***
 * 배열 복제할 때는 Object.assign 말고 concat 사용
